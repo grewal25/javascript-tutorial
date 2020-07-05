@@ -1,11 +1,16 @@
-var username;
-var message;
+var inStock;
+var shipping;
+inStock = true;
+shipping = false;
 
-username = 'Molly';
-message = 'See our upcoming range';
+var elStock = document.getElementById('stock');
+elStock.className = inStock;
 
-var elName = document.getElementById('name')
-elName.textContent = username;
+var elShip = document.getElementById('shipping');
+elShip.className = shipping
 
-var elNote = document.getElementById('note');
-elNote.textContent = message;
+var colors ;
+colors = ['white', 'black', 'custom'];
+
+var el = document.getElementById('colors');
+el.innerHTML =  'Color: '+ colors[0];
