@@ -1,11 +1,14 @@
-var username;
-var message;
+const sq1 = x => x*x;
+console.log(sq1(4))
 
-username = 'Molly';
-message = 'See our upcoming range';
+const sq2 = function(x) {
+    return x*x;
+}
 
-var elName = document.getElementById('name')
-elName.textContent = username;
+console.log(sq2(3))
 
-var elNote = document.getElementById('note');
-elNote.textContent = message;
+const horn = () => {
+    console.log("Toot");
+    };
+horn()
+
