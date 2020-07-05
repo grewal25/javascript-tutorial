@@ -1,11 +1,8 @@
-var username;
-var message;
+var msg = 'Sign up to recieve our newsletter for 10%' ;
 
-username = 'Molly';
-message = 'See our upcoming range';
+function updateMessage(){
+    var el = document.getElementById('message');
+    el.textContent = msg;
+}
 
-var elName = document.getElementById('name')
-elName.textContent = username;
-
-var elNote = document.getElementById('note');
-elNote.textContent = message;
+updateMessage();
