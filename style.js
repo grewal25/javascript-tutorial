@@ -1,14 +1,18 @@
-const sq1 = x => x*x;
-console.log(sq1(4))
 
-const sq2 = function(x) {
-    return x*x;
+
+const btn = document.querySelector('button');
+const txt = document.querySelector('p');
+
+
+function updateButton (){
+    if (btn.textContent === 'start machine'){
+        btn.textContent = 'stop machine';
+        txt.textContent = 'machine has started';
+    } else {
+        btn.textContent = 'start machine';
+        txt.textContent = 'machine has stopped';
+
+    }
 }
 
-console.log(sq2(3))
-
-const horn = () => {
-    console.log("Toot");
-    };
-horn()
-
+btn.addEventListener('click', updateButton)
